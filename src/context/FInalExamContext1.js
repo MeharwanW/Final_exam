@@ -151,47 +151,19 @@ export const ProductList = () => {
 
   return (
     <div>
-      {/* Update Product Section */}
-    
-
-      {/* Add Product Section */}
-      <Form.Group controlId="formAddProduct">
-        <Form.Label>Enter New Product Details:</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Title"
-          value={newProduct.title}
-          onChange={(e) => setNewProduct({ ...newProduct, title: e.target.value })}
-        />
-        {/* Add more fields for other properties if needed */}
-      </Form.Group>
-      <Button variant="success" onClick={handleAddProduct}>
-        Add Product
-      </Button>
-
-      {/* Product List */}
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         {products.map(product => (
-          <div key={product.id} className="col mb-4">
+          <div key={product.id} className="col mb-5">
             <Card>
               <Card.Img variant="top" src={product.image} alt={product.title} />
               <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
+                <Card.Title> <p></p>{product.title}</Card.Title>
                 <Card.Text>
-                  <strong>Price:</strong> ${product.price}
-                </Card.Text>
-                <Card.Text>
-                  <strong>Category:</strong> {product.category}
-                </Card.Text>
-                <Card.Text>
-                  <strong>Description:</strong> {product.description}
+                  <p>Price:</p> ${product.price}
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant="danger" onClick={() => deleteProduct(product.id)}>
-                  Close
-                </Button>
-                <small className="text-muted">ID: {product.id}</small>
+              
               </Card.Footer>
             </Card>
           </div>

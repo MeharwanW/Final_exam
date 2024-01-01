@@ -13,7 +13,10 @@ export default function App() {
                 <Routes>
                     <Route path={"/"} element={<HeroSection />}></Route>
                 </Routes>
+                <div className='container'>
                 <Products />
+                </div>
+                
             <Footer/>
         </div>
     );
