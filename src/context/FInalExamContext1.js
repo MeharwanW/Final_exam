@@ -20,7 +20,7 @@ export const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('https://fakestoreapi.com/products?limit=5')
+    fetch('https://fakestoreapi.com/products?limit=8')
       .then(res => res.json())
       .then(data => {
         setProducts(data);
@@ -155,11 +155,11 @@ export const ProductList = () => {
         {products.map(product => (
           <div key={product.id} className="col mb-5">
             <Card>
-              <Card.Img variant="top" src={product.image} alt={product.title} />
+              <Card.Img className='product-img' variant="top" src={product.image} alt={product.title} />
               <Card.Body>
-                <Card.Title> <p></p>{product.title}</Card.Title>
+                <Card.Title> <p className='product-title'>{product.title}</p></Card.Title>
                 <Card.Text>
-                  <p>Price:</p> ${product.price}
+                <p className='price'>${product.price}</p>
                 </Card.Text>
               </Card.Body>
               <Card.Footer>

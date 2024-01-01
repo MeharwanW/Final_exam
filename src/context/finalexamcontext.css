@@ -4,3 +4,29 @@
     height: 400px;
     width: 200px;
 }
+.product-title
+{
+
+}
+Card
+{
+    width: 295;
+     height: 342;
+      left: 0;
+      top: 0 ;
+      position: 'absolute';
+}
+.product-img
+{
+    width: 200px;
+    height: 200px;
+}
+.price
+{
+    color: '#024E82';
+    font-Size: 16px;
+    font-Family: 'Lato';
+    font-Weight: '400';
+    word-Wrap: 'break-word';
+    text-align: center;
+}

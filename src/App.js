@@ -5,6 +5,7 @@ import {Route, Routes} from "react-router-dom";
 import HeroSection from "./components/HeroSection";
 import Products from './components/Products';
 import DeleteProduct from './components/DeleteProduct';
+import { Services } from './components/Services';
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
                 </Routes>
                 <div className='container'>
                 <Products />
+                <Services />
                 </div>
                 
             <Footer/>
