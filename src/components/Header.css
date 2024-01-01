@@ -1,0 +1,53 @@
+
+.logo-title
+{
+    color: '#1D1D1D';
+    font-size: 36px;
+    font-Family: 'Lato';
+    font-Weight: '400';
+    word-Wrap: 'break-word'
+}
+.nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .logo {
+    width: 40px; /* Set your logo width */
+    height: 40px; /* Set your logo height */
+    margin-bottom: 5px; /* Adjust margin as needed */
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+    padding-right: 200px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+font-Size: 12;
+font-Family: 'Arimo';
+font-Weight: '700';
+text-Transform: 'uppercase';
+letter-Spacing: 0.60;
+word-Wrap: 'break-word'
+
+  }
+
+  .icons {
+    display: flex;
+    gap: 20px;
+    
+  }
+  .icons:hover {
+    cursor: pointer;
+  }
+  /* Optional: Style for active link */
+  .menu a.active {
+    font-weight: bold;
+  }
